@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getStartedTapped(_ sender: UIButton) {
-        let transition = storyboard?.instantiateViewController(identifier: "menuScreen") as? NavViewController
+        let transition = storyboard?.instantiateViewController(identifier: "tabView") as? MyoScanTabViewController
         view.window?.rootViewController = transition
         view.window?.makeKeyAndVisible()
     }

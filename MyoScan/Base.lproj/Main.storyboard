@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-gP-8yR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-gP-8yR">
                                 <rect key="frame" x="87" y="718" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.29411764705882354" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,8 +40,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -57,16 +55,68 @@
                     <view key="view" contentMode="scaleToFill" id="Q2Q-3h-T1x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Z71-e6-f5N"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="btB-Zn-7o9"/>
                     <navigationItem key="navigationItem" title="MyoScan" id="fva-oK-L91">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="Image" id="XoC-Vy-05b"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1S-M5-JyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="115"/>
+            <point key="canvasLocation" x="1745" y="869"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Wg0-1q-0Ua">
+            <objects>
+                <viewController id="drx-RW-Oie" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qde-V2-AqL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4XN-Qf-0B2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="hVZ-LI-JgC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5F-hO-7dV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="438"/>
+        </scene>
+        <!--Device Pairing-->
+        <scene sceneID="nYF-Gi-8kS">
+            <objects>
+                <viewController id="lOc-1w-ILf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="euT-n4-xUG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BRI-gj-3kA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Device Pairing" id="Dw5-B4-EYT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRh-p1-4sB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="-225"/>
+        </scene>
+        <!--Myo Scan Tab View Controller-->
+        <scene sceneID="RDJ-hD-grG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWt-qt-QgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="tabView" id="AeT-1n-Pav" customClass="MyoScanTabViewController" customModule="MyoScan" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BNR-0v-uWG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="u6z-CN-qH3" kind="relationship" relationship="viewControllers" id="Qwy-qO-yll"/>
+                        <segue destination="WMd-xz-Rvq" kind="relationship" relationship="viewControllers" id="ZTH-mt-gj7"/>
+                        <segue destination="drx-RW-Oie" kind="relationship" relationship="viewControllers" id="Ly4-ze-OUv"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1745" y="115"/>
         </scene>
         <!--Nav View Controller-->
         <scene sceneID="7iy-bi-ULj">
@@ -84,13 +134,33 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0a-5E-zDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="115"/>
+            <point key="canvasLocation" x="870" y="869"/>
+        </scene>
+        <!--Pair-->
+        <scene sceneID="VEi-Ua-c0G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WMd-xz-Rvq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pair" image="personalhotspot" catalog="system" id="z5n-Oj-Bpl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X83-hr-NBg">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lOc-1w-ILf" kind="relationship" relationship="rootViewController" id="o9a-mv-6Qf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcf-3k-sUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="-225"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hFD-Gb-3kX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="24" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="personalhotspot" catalog="system" width="128" height="75"/>
     </resources>
 </document>
