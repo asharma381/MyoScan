@@ -15,6 +15,8 @@
 		489F1B7C24CE1F4E00CE816B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489F1B7A24CE1F4E00CE816B /* LaunchScreen.storyboard */; };
 		489F1B8724CE1F4E00CE816B /* MyoScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B8624CE1F4E00CE816B /* MyoScanTests.swift */; };
 		489F1B9224CE1F4E00CE816B /* MyoScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B9124CE1F4E00CE816B /* MyoScanUITests.swift */; };
+		48FFA65A24CE2C19002E3251 /* MyoScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */; };
+		48FFA65C24CE2C74002E3251 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFA65B24CE2C74002E3251 /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		489F1B8D24CE1F4E00CE816B /* MyoScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		489F1B9124CE1F4E00CE816B /* MyoScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoScanUITests.swift; sourceTree = "<group>"; };
 		489F1B9324CE1F4E00CE816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoScanViewController.swift; sourceTree = "<group>"; };
+		48FFA65B24CE2C74002E3251 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				489F1B7124CE1F4B00CE816B /* SceneDelegate.swift */,
 				489F1B7324CE1F4B00CE816B /* ViewController.swift */,
 				489F1B7524CE1F4B00CE816B /* Main.storyboard */,
+				48FFA65B24CE2C74002E3251 /* NavViewController.swift */,
+				48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */,
 				489F1B7824CE1F4E00CE816B /* Assets.xcassets */,
 				489F1B7A24CE1F4E00CE816B /* LaunchScreen.storyboard */,
 				489F1B7D24CE1F4E00CE816B /* Info.plist */,
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				489F1B7424CE1F4B00CE816B /* ViewController.swift in Sources */,
+				48FFA65C24CE2C74002E3251 /* NavViewController.swift in Sources */,
 				489F1B7024CE1F4B00CE816B /* AppDelegate.swift in Sources */,
 				489F1B7224CE1F4B00CE816B /* SceneDelegate.swift in Sources */,
+				48FFA65A24CE2C19002E3251 /* MyoScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

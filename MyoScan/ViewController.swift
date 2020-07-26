@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func getStartedTapped(_ sender: UIButton) {
+        let transition = storyboard?.instantiateViewController(identifier: "menuScreen") as? NavViewController
+        view.window?.rootViewController = transition
+        view.window?.makeKeyAndVisible()
+    }
+    
 }
 
