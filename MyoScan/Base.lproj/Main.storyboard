@@ -83,26 +83,101 @@
             </objects>
             <point key="canvasLocation" x="3428" y="438"/>
         </scene>
-        <!--Device Pairing-->
+        <!--Device Selection-->
         <scene sceneID="nYF-Gi-8kS">
             <objects>
-                <viewController id="lOc-1w-ILf" sceneMemberID="viewController">
+                <viewController id="lOc-1w-ILf" customClass="DeviceSelectViewController" customModule="MyoScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euT-n4-xUG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="eMV-su-7qr">
+                                <rect key="frame" x="20" y="188" width="335" height="241"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yb-qe-kqg">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="55.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="watchPressed:" destination="lOc-1w-ILf" eventType="touchUpInside" id="kXZ-01-KcK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-Wl-qIc">
+                                        <rect key="frame" x="0.0" y="185.66666666666669" width="335" height="55.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="movesensePressed:" destination="lOc-1w-ILf" eventType="touchUpInside" id="fKo-aX-gTA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bj-Ch-i6l">
+                                <rect key="frame" x="20" y="122.99999999999999" width="335" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eMV-su-7qr" firstAttribute="leading" secondItem="BRI-gj-3kA" secondAttribute="leading" constant="20" id="2aY-So-Azy"/>
+                            <constraint firstItem="BRI-gj-3kA" firstAttribute="bottom" secondItem="eMV-su-7qr" secondAttribute="bottom" constant="300" id="639-VA-vGn"/>
+                            <constraint firstItem="5Bj-Ch-i6l" firstAttribute="top" secondItem="BRI-gj-3kA" secondAttribute="top" constant="35" id="KLq-s7-5pv"/>
+                            <constraint firstItem="eMV-su-7qr" firstAttribute="top" secondItem="BRI-gj-3kA" secondAttribute="top" constant="100" id="cYC-W1-sFf"/>
+                            <constraint firstItem="eMV-su-7qr" firstAttribute="top" secondItem="5Bj-Ch-i6l" secondAttribute="bottom" constant="44.666666666666686" id="iFR-CH-rQA"/>
+                            <constraint firstItem="BRI-gj-3kA" firstAttribute="trailing" secondItem="eMV-su-7qr" secondAttribute="trailing" constant="20" id="lJB-JK-PrO"/>
+                            <constraint firstItem="5Bj-Ch-i6l" firstAttribute="leading" secondItem="BRI-gj-3kA" secondAttribute="leading" constant="20" id="svX-gy-Dfp"/>
+                            <constraint firstItem="BRI-gj-3kA" firstAttribute="trailing" secondItem="5Bj-Ch-i6l" secondAttribute="trailing" constant="20" id="yVt-qv-Txa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BRI-gj-3kA"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Device Pairing" id="Dw5-B4-EYT"/>
+                    <navigationItem key="navigationItem" title="Device Selection" id="Dw5-B4-EYT"/>
+                    <connections>
+                        <outlet property="aWatchButton" destination="6yb-qe-kqg" id="bJ6-iu-TKG"/>
+                        <outlet property="movesenseButton" destination="mxF-Wl-qIc" id="8xU-mG-mQ9"/>
+                        <outlet property="selectionLabel" destination="5Bj-Ch-i6l" id="71K-GC-UMS"/>
+                        <segue destination="EYP-jv-JEF" kind="show" identifier="pairSegue" id="5Ng-gn-ObL"/>
+                        <segue destination="Z1b-8j-Jbf" kind="show" identifier="watchStreamSegue" id="ikR-Dh-EFG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRh-p1-4sB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3428" y="-225"/>
+            <point key="canvasLocation" x="3428" y="-225.36945812807883"/>
+        </scene>
+        <!--Pair-->
+        <scene sceneID="w23-9f-G5U">
+            <objects>
+                <viewController id="EYP-jv-JEF" customClass="PairViewController" customModule="MyoScan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2d-L1-1pE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7hM-DW-gJC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pair" id="L3R-Zs-WNr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="596-4x-gTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4217" y="-225"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o2y-Pi-cdf">
+            <objects>
+                <viewController id="Z1b-8j-Jbf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xh7-EN-KLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="08q-4y-DFV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6sb-VM-Y7D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-Fk-GSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4217" y="-913"/>
         </scene>
         <!--Myo Scan Tab View Controller-->
         <scene sceneID="RDJ-hD-grG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eWt-qt-QgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="tabView" id="AeT-1n-Pav" customClass="MyoScanTabViewController" customModule="MyoScan" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BNR-0v-uWG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -115,6 +190,7 @@
                         <segue destination="drx-RW-Oie" kind="relationship" relationship="viewControllers" id="Ly4-ze-OUv"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWt-qt-QgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745" y="115"/>
         </scene>
