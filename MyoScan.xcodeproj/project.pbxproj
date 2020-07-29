@@ -23,6 +23,7 @@
 		C58FA52424CF5F9900B0C741 /* DevicePairingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA52324CF5F9900B0C741 /* DevicePairingConstants.swift */; };
 		C58FA52624CF707A00B0C741 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA52524CF707A00B0C741 /* PairViewController.swift */; };
 		C58FA52824CF70F100B0C741 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA52724CF70F100B0C741 /* StreamViewController.swift */; };
+		C58FA52E24D0E9E300B0C741 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58FA52D24D0E9E300B0C741 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		C58FA52324CF5F9900B0C741 /* DevicePairingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePairingConstants.swift; sourceTree = "<group>"; };
 		C58FA52524CF707A00B0C741 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
 		C58FA52724CF70F100B0C741 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		C58FA52B24D0E9E300B0C741 /* MyoScan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyoScan.entitlements; sourceTree = "<group>"; };
+		C58FA52D24D0E9E300B0C741 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58FA52E24D0E9E300B0C741 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,7 @@
 				489F1B8524CE1F4E00CE816B /* MyoScanTests */,
 				489F1B9024CE1F4E00CE816B /* MyoScanUITests */,
 				489F1B6D24CE1F4B00CE816B /* Products */,
+				C58FA52C24D0E9E300B0C741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +120,7 @@
 		489F1B6E24CE1F4B00CE816B /* MyoScan */ = {
 			isa = PBXGroup;
 			children = (
+				C58FA52B24D0E9E300B0C741 /* MyoScan.entitlements */,
 				489F1B6F24CE1F4B00CE816B /* AppDelegate.swift */,
 				489F1B7124CE1F4B00CE816B /* SceneDelegate.swift */,
 				489F1B7324CE1F4B00CE816B /* ViewController.swift */,
@@ -158,6 +164,14 @@
 				C58FA52124CF5B2C00B0C741 /* BLEControl.swift */,
 			);
 			path = DevicePairing;
+			sourceTree = "<group>";
+		};
+		C58FA52C24D0E9E300B0C741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C58FA52D24D0E9E300B0C741 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,8 +488,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyoScan/MyoScan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9K3586753;
+				DEVELOPMENT_TEAM = 6WM3L6GXTU;
 				INFOPLIST_FILE = MyoScan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,8 +507,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyoScan/MyoScan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9K3586753;
+				DEVELOPMENT_TEAM = 6WM3L6GXTU;
 				INFOPLIST_FILE = MyoScan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

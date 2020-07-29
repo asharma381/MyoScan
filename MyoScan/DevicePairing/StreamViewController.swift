@@ -7,15 +7,44 @@
 //
 
 import UIKit
-
+import HealthKit
 class StreamViewController: UIViewController {
 
+    let healthStore = HKHealthStore()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        authorizeHealthKit()
+        
         // Do any additional setup after loading the view.
     }
-    
+    func authorizeHealthKit(){
+        let read = Set([HKObjectType.quantityType(forIdentifier: .heartRate)!])
+        let share = Set([HKObjectType.quantityType(forIdentifier: .heartRate)!])
+
+        healthStore.requestAuthorization(toShare: share, read: read) { (chk, error) in
+            if(chk){
+                print("Permission Granted")
+                self.latestHeartRate()
+            }
+        }
+    }
+    func latestHeartRate(){
+        guard let sampleType = HKObjectType.quantityType(forIdentifier: .heartRate) else{
+            return
+        }
+        
+        let startDate = Calendar.current.date(byAdding: .day, value: <#T##Int#>, to: Date())
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictEndDate)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+        let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: Int(HKObjectQueryNoLimit), sortDescriptors: [sortDescriptor]) { (sample, result, error) in
+            guard error == nil else{
+                return
+            }
+            //let data = result
+            
+        }
+        healthStore.execute(query)
+    }
 
     /*
     // MARK: - Navigation

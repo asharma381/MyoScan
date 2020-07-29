@@ -4,6 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>We want to acces Heart Rate data</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We want to acces Heart Rate data</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We want to acces Heart Rate data</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
