@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4866ABBC24CE4B6100294BBD /* MyoScanTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866ABBB24CE4B6100294BBD /* MyoScanTabViewController.swift */; };
+		488CE69024D61BEF00572452 /* WalkthroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CE68E24D61BEF00572452 /* WalkthroughCollectionViewCell.swift */; };
+		488CE69124D61BEF00572452 /* WalkthroughCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488CE68F24D61BEF00572452 /* WalkthroughCollectionViewCell.xib */; };
+		488CE69324D61F6900572452 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CE69224D61F6900572452 /* UPCarouselFlowLayout.swift */; };
 		489F1B7024CE1F4B00CE816B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B6F24CE1F4B00CE816B /* AppDelegate.swift */; };
 		489F1B7224CE1F4B00CE816B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B7124CE1F4B00CE816B /* SceneDelegate.swift */; };
 		489F1B7424CE1F4B00CE816B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B7324CE1F4B00CE816B /* ViewController.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		4866ABBB24CE4B6100294BBD /* MyoScanTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoScanTabViewController.swift; sourceTree = "<group>"; };
+		488CE68E24D61BEF00572452 /* WalkthroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCollectionViewCell.swift; sourceTree = "<group>"; };
+		488CE68F24D61BEF00572452 /* WalkthroughCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughCollectionViewCell.xib; sourceTree = "<group>"; };
+		488CE69224D61F6900572452 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		489F1B6C24CE1F4B00CE816B /* MyoScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyoScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489F1B6F24CE1F4B00CE816B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		489F1B7124CE1F4B00CE816B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 				4866ABBB24CE4B6100294BBD /* MyoScanTabViewController.swift */,
 				48FFA65B24CE2C74002E3251 /* NavViewController.swift */,
 				48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */,
+				488CE69224D61F6900572452 /* UPCarouselFlowLayout.swift */,
+				488CE68E24D61BEF00572452 /* WalkthroughCollectionViewCell.swift */,
+				488CE68F24D61BEF00572452 /* WalkthroughCollectionViewCell.xib */,
 				489F1B7824CE1F4E00CE816B /* Assets.xcassets */,
 				C58FA51E24CF57CA00B0C741 /* DevicePairing */,
 				489F1B7A24CE1F4E00CE816B /* LaunchScreen.storyboard */,
@@ -281,6 +290,7 @@
 				489F1B7C24CE1F4E00CE816B /* LaunchScreen.storyboard in Resources */,
 				489F1B7924CE1F4E00CE816B /* Assets.xcassets in Resources */,
 				489F1B7724CE1F4B00CE816B /* Main.storyboard in Resources */,
+				488CE69124D61BEF00572452 /* WalkthroughCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58FA52624CF707A00B0C741 /* PairViewController.swift in Sources */,
+				488CE69024D61BEF00572452 /* WalkthroughCollectionViewCell.swift in Sources */,
 				489F1B7424CE1F4B00CE816B /* ViewController.swift in Sources */,
 				C58FA52824CF70F100B0C741 /* StreamViewController.swift in Sources */,
 				48FFA65C24CE2C74002E3251 /* NavViewController.swift in Sources */,
@@ -315,6 +326,7 @@
 				48FFA65A24CE2C19002E3251 /* MyoScanViewController.swift in Sources */,
 				C58FA52024CF580600B0C741 /* DeviceSelectViewController.swift in Sources */,
 				4866ABBC24CE4B6100294BBD /* MyoScanTabViewController.swift in Sources */,
+				488CE69324D61F6900572452 /* UPCarouselFlowLayout.swift in Sources */,
 				C58FA52224CF5B2C00B0C741 /* BLEControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

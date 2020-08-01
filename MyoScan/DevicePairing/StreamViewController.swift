@@ -33,7 +33,8 @@ class StreamViewController: UIViewController {
             return
         }
         
-        let startDate = Calendar.current.date(byAdding: .day, value: <#T##Int#>, to: Date())
+        // MARK: Placeholder value is -2. 2 weeks back.                    Subject to change.
+        let startDate = Calendar.current.date(byAdding: .day, value: -2, to: Date())
         let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictEndDate)
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
         let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: Int(HKObjectQueryNoLimit), sortDescriptors: [sortDescriptor]) { (sample, result, error) in
