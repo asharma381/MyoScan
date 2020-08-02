@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -191,21 +191,40 @@
             </objects>
             <point key="canvasLocation" x="4217" y="-225"/>
         </scene>
-        <!--View Controller-->
+        <!--Authorize View Controller-->
         <scene sceneID="o2y-Pi-cdf">
             <objects>
-                <viewController id="Z1b-8j-Jbf" sceneMemberID="viewController">
+                <viewController id="Z1b-8j-Jbf" customClass="AuthorizeViewController" customModule="MyoScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xh7-EN-KLK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-YK-eo4">
+                                <rect key="frame" x="89" y="269" width="196" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="authorizeTapped:" destination="Z1b-8j-Jbf" eventType="touchUpInside" id="FY5-VQ-4HO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgU-nO-Fvh">
+                                <rect key="frame" x="16" y="487" width="343" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="08q-4y-DFV"/>
                     </view>
                     <navigationItem key="navigationItem" id="6sb-VM-Y7D"/>
+                    <connections>
+                        <outlet property="algorithmButton" destination="XgU-nO-Fvh" id="Io0-yV-d7v"/>
+                        <outlet property="authorizeButton" destination="OXw-YK-eo4" id="rBD-95-GVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-Fk-GSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4217" y="-913"/>
+            <point key="canvasLocation" x="4216.8000000000002" y="-913.30049261083752"/>
         </scene>
         <!--Myo Scan Tab View Controller-->
         <scene sceneID="RDJ-hD-grG">

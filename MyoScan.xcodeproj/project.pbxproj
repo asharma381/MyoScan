@@ -21,6 +21,7 @@
 		489F1B9224CE1F4E00CE816B /* MyoScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489F1B9124CE1F4E00CE816B /* MyoScanUITests.swift */; };
 		48FFA65A24CE2C19002E3251 /* MyoScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */; };
 		48FFA65C24CE2C74002E3251 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFA65B24CE2C74002E3251 /* NavViewController.swift */; };
+		C57C31BA24D7796E000623D8 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57C31B924D7796E000623D8 /* AuthorizeViewController.swift */; };
 		C58FA52024CF580600B0C741 /* DeviceSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA51F24CF580600B0C741 /* DeviceSelectViewController.swift */; };
 		C58FA52224CF5B2C00B0C741 /* BLEControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA52124CF5B2C00B0C741 /* BLEControl.swift */; };
 		C58FA52424CF5F9900B0C741 /* DevicePairingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FA52324CF5F9900B0C741 /* DevicePairingConstants.swift */; };
@@ -67,6 +68,7 @@
 		489F1B9324CE1F4E00CE816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48FFA65924CE2C19002E3251 /* MyoScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoScanViewController.swift; sourceTree = "<group>"; };
 		48FFA65B24CE2C74002E3251 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		C57C31B924D7796E000623D8 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		C58FA51F24CF580600B0C741 /* DeviceSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectViewController.swift; sourceTree = "<group>"; };
 		C58FA52124CF5B2C00B0C741 /* BLEControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEControl.swift; sourceTree = "<group>"; };
 		C58FA52324CF5F9900B0C741 /* DevicePairingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePairingConstants.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				C58FA51F24CF580600B0C741 /* DeviceSelectViewController.swift */,
 				C58FA52324CF5F9900B0C741 /* DevicePairingConstants.swift */,
+				C57C31B924D7796E000623D8 /* AuthorizeViewController.swift */,
 				C58FA52724CF70F100B0C741 /* StreamViewController.swift */,
 				C58FA52524CF707A00B0C741 /* PairViewController.swift */,
 				C58FA52124CF5B2C00B0C741 /* BLEControl.swift */,
@@ -319,6 +322,7 @@
 				488CE69024D61BEF00572452 /* WalkthroughCollectionViewCell.swift in Sources */,
 				489F1B7424CE1F4B00CE816B /* ViewController.swift in Sources */,
 				C58FA52824CF70F100B0C741 /* StreamViewController.swift in Sources */,
+				C57C31BA24D7796E000623D8 /* AuthorizeViewController.swift in Sources */,
 				48FFA65C24CE2C74002E3251 /* NavViewController.swift in Sources */,
 				C58FA52424CF5F9900B0C741 /* DevicePairingConstants.swift in Sources */,
 				489F1B7024CE1F4B00CE816B /* AppDelegate.swift in Sources */,
